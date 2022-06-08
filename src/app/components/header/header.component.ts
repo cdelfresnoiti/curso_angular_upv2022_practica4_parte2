@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
   urlImagen: string;
   titulo: string;
 
+  textoMenu: string = 'Esperando desde el header';
+
   constructor() {
     this.titulo = 'Práctica 4';
     this.urlImagen =

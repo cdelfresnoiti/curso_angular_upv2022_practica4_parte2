@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { CoordenadasComponent } from './components/coordenadas/coordenadas.component';
 import { CalculadoraComponent } from './components/calculadora/calculadora.component';
 import { SaludoComponent } from './components/saludo/saludo.component';
+import { ResultadoComponent } from './components/resultado/resultado.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, BodyComponent, CoordenadasComponent, CalculadoraComponent, SaludoComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, BodyComponent, CoordenadasComponent, CalculadoraComponent, SaludoComponent, ResultadoComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

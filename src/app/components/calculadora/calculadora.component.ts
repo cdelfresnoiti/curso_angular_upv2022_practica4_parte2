@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculadora',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculadora.component.css'],
 })
 export class CalculadoraComponent implements OnInit {
-  contador = 1;
+  contador = 0;
+  @Output() resultadoEvent: EventEmitter<number> = new EventEmitter<number>();
 
   constructor() {}
 
@@ -14,9 +15,11 @@ export class CalculadoraComponent implements OnInit {
 
   sumar() {
     this.contador++;
+    this.resultadoEvent.emit(this.contador);
   }
 
   restar() {
     this.contador--;
+    this.resultadoEvent.emit(this.contador);
   }
 }

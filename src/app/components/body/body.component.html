@@ -1,4 +1,4 @@
-<app-calculadora></app-calculadora>
+<app-calculadora (resultadoEvent)="resultadoEvent($event)"></app-calculadora>
 <div class="row">
   <div class="col"><hr /></div>
 </div>
@@ -7,3 +7,7 @@
   <div class="col"><hr /></div>
 </div>
 <app-saludo></app-saludo>
+<div class="row">
+  <div class="col"><hr /></div>
+</div>
+<app-resultado [resultado]="resultadoCalculadora"></app-resultado>

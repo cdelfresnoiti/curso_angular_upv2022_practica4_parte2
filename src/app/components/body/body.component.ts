@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
   constructor() {}
+  resultadoCalculadora = 0;
 
   ngOnInit(): void {}
+
+  resultadoEvent(data: number) {
+    this.resultadoCalculadora = data;
+  }
 }

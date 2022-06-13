@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col">
+    <h1 style="text-align: center">Two-way data binding</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">{{
+      saludo
+    }}</label>
+    <input
+      class="form-control"
+      id="exampleFormControlInput1"
+      placeholder="Introduzca texto para mostrar en label"
+      [(ngModel)]="saludo"
+    />
+  </div>
+</div>

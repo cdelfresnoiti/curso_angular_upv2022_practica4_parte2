@@ -6,9 +6,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BodyComponent } from './components/body/body.component';
 import { FormsModule } from '@angular/forms';
+import { CoordenadasComponent } from './components/coordenadas/coordenadas.component';
+import { CalculadoraComponent } from './components/calculadora/calculadora.component';
+import { SaludoComponent } from './components/saludo/saludo.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, BodyComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, BodyComponent, CoordenadasComponent, CalculadoraComponent, SaludoComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,68 +1,9 @@
-<div class="row">
-  <div class="col" style="text-align: center">
-    <h1>Calculadora</h1>
-  </div>
-</div>
-<div class="row" style="margin-top: 50px">
-  <div class="col" style="text-align: center">
-    <h3>{{ contador }}</h3>
-  </div>
-</div>
-<div class="row">
-  <div class="col" style="text-align: center">
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary" (click)="sumar()">
-        Sumar
-      </button>
-      <button type="button" class="btn btn-primary" (click)="restar()">
-        Restar
-      </button>
-    </div>
-  </div>
-</div>
+<app-calculadora></app-calculadora>
 <div class="row">
   <div class="col"><hr /></div>
 </div>
+<app-coordenadas></app-coordenadas>
 <div class="row">
-  <div class="col" style="text-align: center">
-    <h1>Coordenadas</h1>
-  </div>
+  <div class="col"><hr /></div>
 </div>
-<div class="row" style="margin-top: 30px">
-  <div class="col">
-    <div class="d-grid gap-2">
-      <button
-        class="btn btn-primary"
-        type="button"
-        (click)="obtenerLocalizacion($event)"
-      >
-        Obtener localización
-      </button>
-    </div>
-  </div>
-</div>
-<div class="row" style="margin-top: 20px">
-  <div class="col">
-    <div class="mb-3">
-      <textarea class="form-control" rows="3" [value]="localizacion"></textarea>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <h1 style="text-align: center">Two-way data binding</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">{{
-      saludo
-    }}</label>
-    <input
-      class="form-control"
-      id="exampleFormControlInput1"
-      placeholder="Introduzca texto para mostrar en label"
-      [(ngModel)]="saludo"
-    />
-  </div>
-</div>
+<app-saludo></app-saludo>
